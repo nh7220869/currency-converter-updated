@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1><b>Currency Converter</b></h1>
+    <div class="converter">
+      <div class="input-section">
+        <br><input type="number" id="amount" placeholder="Enter amount" /></br>
+        div {
+            column-gap: 40px;
+          }
+        <select id="fromCurrency">
+            <option value="PKR" data-flag="pk">PKR - Pakistan</option>
+    <option value="USD" data-flag="us">USD - United States</option>
+    <option value="INR" data-flag="in">INR - India</option>
+    <option value="EUR" data-flag="eu">EUR - Eurozone</option>
+    <option value="GBP" data-flag="gb">GBP - United Kingdom</option>
+    <option value="AUD" data-flag="au">AUD - Australia</option>
+    <option value="CAD" data-flag="ca">CAD - Canada</option>
+    <option value="JPY" data-flag="jp">JPY - Japan</option>
+    <option value="CNY" data-flag="cn">CNY - China</option>
+    <option value="ZAR" data-flag="za">ZAR - South Africa</option>
+    <option value="BRL" data-flag="br">BRL - Brazil</option>
+    <option value="MXN" data-flag="mx">MXN - Mexico</option>
+    <option value="NGN" data-flag="ng">NGN - Nigeria</option>
+    <option value="EGP" data-flag="eg">EGP - Egypt</option>
+    <option value="THB" data-flag="th">THB - Thailand</option>
+    <option value="SGD" data-flag="sg">SGD - Singapore</option>
+    <option value="KRW" data-flag="kr">KRW - South Korea</option>
+    <option value="MYR" data-flag="my">MYR - Malaysia</option>
+    <option value="AED" data-flag="ae">AED - United Arab Emirates</option>
+    <option value="SAR" data-flag="sa">SAR - Saudi Arabia</option>
+    <option value="VND" data-flag="vn">VND - Vietnam</option>
+    <option value="PHP" data-flag="ph">PHP - Philippines</option>
+    <option value="RUB" data-flag="ru">RUB - Russia</option>
+    <option value="TRY" data-flag="tr">TRY - Turkey</option>
+    <option value="NOK" data-flag="no">NOK - Norway</option>
+    <option value="SEK" data-flag="se">SEK - Sweden</option>
+    <option value="DKK" data-flag="dk">DKK - Denmark</option>
+    <option value="CHF" data-flag="ch">CHF - Switzerland</option>
+    <option value="PLN" data-flag="pl">PLN - Poland</option>
+    <option value="HUF" data-flag="hu">HUF - Hungary</option>
+    <option value="CZK" data-flag="cz">CZK - Czech Republic</option>
+    <option value="ARS" data-flag="ar">ARS - Argentina</option>
+    <option value="CLP" data-flag="cl">CLP - Chile</option>
+    <option value="PEN" data-flag="pe">PEN - Peru</option>
+    <option value="COP" data-flag="co">COP - Colombia</option>
+    <option value="BOB" data-flag="bo">BOB - Bolivia</option>
+    <option value="UYU" data-flag="uy">UYU - Uruguay</option>
+    <option value="BZD" data-flag="bz">BZD - Belize</option>
+    <option value="HTG" data-flag="ht">HTG - Haiti</option>
+    <option value="DOP" data-flag="do">DOP - Dominican Republic</option>
+    <option value="JMD" data-flag="jm">JMD - Jamaica</option>
+    <option value="TTD" data-flag="tt">TTD - Trinidad and Tobago</option>
+    <option value="BBD" data-flag="bb">BBD - Barbados</option>
+    <option value="KYD" data-flag="ky">KYD - Cayman Islands</option>
+    <option value="XCD" data-flag="vc">XCD - East Caribbean</option>
+    <option value="BHD" data-flag="bh">BHD - Bahrain</option>
+    <option value="KWD" data-flag="kw">KWD - Kuwait</option>
+    <option value="QAR" data-flag="qa">QAR - Qatar</option>
+    <option value="OMR" data-flag="om">OMR - Oman</option>
+    <option value="JOD" data-flag="jo">JOD - Jordan</option>
+    <option value="LKR" data-flag="lk">LKR - Sri Lanka</option>
+    <option value="BDT" data-flag="bd">BDT - Bangladesh</option>
+    <option value="NPR" data-flag="np">NPR - Nepal</option>
+    <option value="BWP" data-flag="bw">BWP - Botswana</option>
+    <option value="ZMW" data-flag="zm">ZMW - Zambia</option>
+    <option value="GHS" data-flag="gh">GHS - Ghana</option>
+    <option value="KES" data-flag="ke">KES - Kenya</option>
+    <option value="UGX" data-flag="ug">UGX - Uganda</option>
+    <option value="TZS" data-flag="tz">TZS - Tanzania</option>
+    <option value="ETB" data-flag="et">ETB - Ethiopia</option>
+    <option value="MAD" data-flag="ma">MAD - Morocco</option>
+    <option value="TND" data-flag="tn">TND - Tunisia</option>
+    <option value="DZD" data-flag="dz">DZD - Algeria</option>
+    <option value="XOF" data-flag="sn">XOF - West Africa</option>
+    <option value="XAF" data-flag="cm">XAF - Central Africa</option>
+    <option value="EGP" data-flag="eg">EGP - Egypt</option>
+    <option value="AOA" data-flag="ao">AOA - Angola</option>
+    <option value="MZN" data-flag="mz">MZN - Mozambique</option>
+    <option value="CDF" data-flag="cd">CDF - Congo (DRC)</option>
+    <option value="ZAR" data-flag="za">ZAR - South Africa</option>
+    <option value="XPF" data-flag="pf">XPF - CFP Franc</option>
+    <option value="PGK" data-flag="pg">PGK - Papua New Guinea</option>
+    <option value="FJD" data-flag="fj">FJD - Fiji</option>
+    <option value="SBD" data-flag="sb">SBD - Solomon Islands</option>
+    <option value="TOP" data-flag="to">TOP - Tonga</option>
+    <option value="WST" data-flag="ws">WST - Samoa</option>
+    <option value="VUV" data-flag="vu">VUV - Vanuatu</option>
+    <option value="XDR" data-flag="imf">XDR - Special Drawing Rights</option>
+        </select>
+        
+      </div>
+      
+      <!-- <div class="arrow">→</div> -->
+
+      <div class="output-section">
+        <select id="toCurrency">
+            <option value="PKR" data-flag="pk">PKR - Pakistan</option>
+            <option value="USD" data-flag="us">USD - United States</option>
+            <option value="INR" data-flag="in">INR - India</option>
+            <option value="EUR" data-flag="eu">EUR - Eurozone</option>
+            <option value="GBP" data-flag="gb">GBP - United Kingdom</option>
+            <option value="AUD" data-flag="au">AUD - Australia</option>
+            <option value="CAD" data-flag="ca">CAD - Canada</option>
+            <option value="JPY" data-flag="jp">JPY - Japan</option>
+            <option value="CNY" data-flag="cn">CNY - China</option>
+            <option value="ZAR" data-flag="za">ZAR - South Africa</option>
+            <option value="BRL" data-flag="br">BRL - Brazil</option>
+            <option value="MXN" data-flag="mx">MXN - Mexico</option>
+            <option value="NGN" data-flag="ng">NGN - Nigeria</option>
+            <option value="EGP" data-flag="eg">EGP - Egypt</option>
+            <option value="THB" data-flag="th">THB - Thailand</option>
+            <option value="SGD" data-flag="sg">SGD - Singapore</option>
+            <option value="KRW" data-flag="kr">KRW - South Korea</option>
+            <option value="MYR" data-flag="my">MYR - Malaysia</option>
+            <option value="AED" data-flag="ae">AED - United Arab Emirates</option>
+            <option value="SAR" data-flag="sa">SAR - Saudi Arabia</option>
+            <option value="VND" data-flag="vn">VND - Vietnam</option>
+            <option value="PHP" data-flag="ph">PHP - Philippines</option>
+            <option value="RUB" data-flag="ru">RUB - Russia</option>
+            <option value="TRY" data-flag="tr">TRY - Turkey</option>
+            <option value="NOK" data-flag="no">NOK - Norway</option>
+            <option value="SEK" data-flag="se">SEK - Sweden</option>
+            <option value="DKK" data-flag="dk">DKK - Denmark</option>
+            <option value="CHF" data-flag="ch">CHF - Switzerland</option>
+            <option value="PLN" data-flag="pl">PLN - Poland</option>
+            <option value="HUF" data-flag="hu">HUF - Hungary</option>
+            <option value="CZK" data-flag="cz">CZK - Czech Republic</option>
+            <option value="ARS" data-flag="ar">ARS - Argentina</option>
+            <option value="CLP" data-flag="cl">CLP - Chile</option>
+            <option value="PEN" data-flag="pe">PEN - Peru</option>
+            <option value="COP" data-flag="co">COP - Colombia</option>
+            <option value="BOB" data-flag="bo">BOB - Bolivia</option>
+            <option value="UYU" data-flag="uy">UYU - Uruguay</option>
+            <option value="BZD" data-flag="bz">BZD - Belize</option>
+            <option value="HTG" data-flag="ht">HTG - Haiti</option>
+            <option value="DOP" data-flag="do">DOP - Dominican Republic</option>
+            <option value="JMD" data-flag="jm">JMD - Jamaica</option>
+            <option value="TTD" data-flag="tt">TTD - Trinidad and Tobago</option>
+            <option value="BBD" data-flag="bb">BBD - Barbados</option>
+            <option value="KYD" data-flag="ky">KYD - Cayman Islands</option>
+            <option value="XCD" data-flag="vc">XCD - East Caribbean</option>
+            <option value="BHD" data-flag="bh">BHD - Bahrain</option>
+            <option value="KWD" data-flag="kw">KWD - Kuwait</option>
+            <option value="QAR" data-flag="qa">QAR - Qatar</option>
+            <option value="OMR" data-flag="om">OMR - Oman</option>
+            <option value="JOD" data-flag="jo">JOD - Jordan</option>
+            <option value="LKR" data-flag="lk">LKR - Sri Lanka</option>
+            <option value="BDT" data-flag="bd">BDT - Bangladesh</option>
+            <option value="NPR" data-flag="np">NPR - Nepal</option>
+            <option value="BWP" data-flag="bw">BWP - Botswana</option>
+            <option value="ZMW" data-flag="zm">ZMW - Zambia</option>
+            <option value="GHS" data-flag="gh">GHS - Ghana</option>
+            <option value="KES" data-flag="ke">KES - Kenya</option>
+            <option value="UGX" data-flag="ug">UGX - Uganda</option>
+            <option value="TZS" data-flag="tz">TZS - Tanzania</option>
+            <option value="ETB" data-flag="et">ETB - Ethiopia</option>
+            <option value="MAD" data-flag="ma">MAD - Morocco</option>
+            <option value="TND" data-flag="tn">TND - Tunisia</option>
+            <option value="DZD" data-flag="dz">DZD - Algeria</option>
+            <option value="XOF" data-flag="sn">XOF - West Africa</option>
+            <option value="XAF" data-flag="cm">XAF - Central Africa</option>
+            <option value="EGP" data-flag="eg">EGP - Egypt</option>
+            <option value="AOA" data-flag="ao">AOA - Angola</option>
+            <option value="MZN" data-flag="mz">MZN - Mozambique</option>
+            <option value="CDF" data-flag="cd">CDF - Congo (DRC)</option>
+            <option value="ZAR" data-flag="za">ZAR - South Africa</option>
+            <option value="XPF" data-flag="pf">XPF - CFP Franc</option>
+            <option value="PGK" data-flag="pg">PGK - Papua New Guinea</option>
+            <option value="FJD" data-flag="fj">FJD - Fiji</option>
+            <option value="SBD" data-flag="sb">SBD - Solomon Islands</option>
+            <option value="TOP" data-flag="to">TOP - Tonga</option>
+            <option value="WST" data-flag="ws">WST - Samoa</option>
+            <option value="VUV" data-flag="vu">VUV - Vanuatu</option>
+            <option value="XDR" data-flag="imf">XDR - Special Drawing Rights</option>
+        </select>
+    </div>
+    <button id="convertBtn">Convert</button>
+  </div>
+       
+        <div id="result">Converted Amount: 0</div>
+      </div>
+ 
+
+  <script src="index.js"></script>
+</body>
+</html>

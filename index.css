@@ -1,0 +1,105 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #dedfdd; /* Light teal background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #2c3e50; /* Dark blue-gray background for the container */
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    column-gap: 6cm;
+}
+.input-section{
+    div {
+        column-gap: 40px;
+      }
+   }
+
+
+h1 {
+    font-size: 4rem;
+  
+/* height: 5cm;
+width: 7 cm; */
+    margin-bottom: 30px;
+    color: #f39c12; /* Bright orange for the title */
+    text-shadow: 0px 0px 12px rgba(243, 156, 18, 0.8);
+}
+
+.converter {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-section, .output-section {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    margin-bottom: 20px;
+
+    padding: 12px;
+    font-size: 15px;
+ 
+
+    border-radius: 8px;
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 300px;
+    transition: border-color 0.2s ease;
+}
+
+
+select, input {
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #16a085; /* Teal border */
+    border-radius: 8px;
+    margin-bottom: 12px;
+    width: 100%;
+    max-width: 300px;
+    transition: border-color 0.2s ease;
+}
+
+select:focus, input:focus {
+    border-color: #1abc9c; /* Light teal focus border */
+    outline: none;
+}
+
+
+button {
+    padding: 12px 28px;
+    font-size: 16px;
+    background-color: #1abc9c /* Green button */
+    color: rgb(252, 248, 248);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #2ecc71; /* Brighter green on hover */
+}
+
+#result {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f39c12; /* Bright orange for the result text */
+    margin-top: 20px;
+}
